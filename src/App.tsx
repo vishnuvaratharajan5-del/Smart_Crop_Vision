@@ -20,6 +20,11 @@ import {
 } from "lucide-react";
 import { DiagnosisReport, DiseaseWikiEntry } from "./types";
 
+// Import locally generated custom sample images representing the user's provided images
+import grapeRotImg from "./assets/images/grape_black_rot_1782459153697.jpg";
+import tomatoBlightImg from "./assets/images/tomato_blight_1782459141632.jpg";
+import potatoHealthyImg from "./assets/images/potato_healthy_1782459127496.jpg";
+
 // Static botanical dictionary database for searchable care sheets
 const CROP_WIKI_DATABASE: DiseaseWikiEntry[] = [
   {
@@ -149,8 +154,8 @@ const CROP_WIKI_DATABASE: DiseaseWikiEntry[] = [
 const DEMO_SAMPLES = [
   {
     id: "sample_grape_rot",
-    name: "Grape Leaf (Black Rot)",
-    imageUrl: "https://images.unsplash.com/photo-1544860707-c352cc599dfa?auto=format&fit=crop&q=80&w=600",
+    name: "Grape (Black Rot)",
+    imageUrl: grapeRotImg,
     mimeType: "image/jpeg",
     report: {
       cropName: "Grape (Vitis vinifera)",
@@ -184,7 +189,7 @@ const DEMO_SAMPLES = [
   {
     id: "sample_tomato_blight",
     name: "Tomato Leaf (Late Blight)",
-    imageUrl: "https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?auto=format&fit=crop&q=80&w=600",
+    imageUrl: tomatoBlightImg,
     mimeType: "image/jpeg",
     report: {
       cropName: "Tomato (Solanum lycopersicum)",
@@ -218,7 +223,7 @@ const DEMO_SAMPLES = [
   {
     id: "sample_healthy_potato",
     name: "Potato Leaf (Healthy)",
-    imageUrl: "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=600",
+    imageUrl: potatoHealthyImg,
     mimeType: "image/jpeg",
     report: {
       cropName: "Potato (Solanum tuberosum)",
